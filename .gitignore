@@ -1,2 +1,6 @@
-./polls/migrations/
-./venv
+# Files to be excluded from Git
+.env
+db.sqlite3
+# Directory to be excluded from Git
+.idea/
+venv
