@@ -14,17 +14,13 @@ Follow these steps to run this django project.
 We recommend using a virtual environment.
 This is the place where your django app lives and will make sure that dependencies are satisfied.
 
-Make sure pip is installed:
-
-`python -m pip --version`
+Make sure pip is installed: `python -m pip --version`
 
 The output should look something like this:
 
 `pip 20.1.1 from /home/janclod/anaconda3/lib/python3.8/site-packages/pip (python 3.8)`
 
-If pip is not installed, you will get a message saying something like this:
-
-`No module named pip`
+If pip is not installed, you will get a message saying something like this: `No module named pip`
 
 **NOTE**: make sure you are running Python >= 2.7.9 or >= 3.4 (run `python -v` to get the Python version).
 
@@ -40,8 +36,7 @@ Run: `git clone https://github.com/janclod/django-tutorial.git`
 
 Move into the project folder:
 
-On Linux:
-`cd ./django-tutorial`
+On Linux: `cd ./django-tutorial`
 
 Create a virtual environment in the project folder (i.e., ./django-tutorial)
 
@@ -57,9 +52,7 @@ On Linux:
 
 ### Requirements
 
-Install project requirements:
-
-`python -m pip install -r requirements.txt`
+Install project requirements: `python -m pip install -r requirements.txt`
 
 This should end up with a success message, looking somethgin like this:
 
@@ -69,7 +62,9 @@ This should end up with a success message, looking somethgin like this:
 
 Rename the `./mysite/.env.example` file to `./mysite/.env`.
 
-Add here your secret key.
+Add here your secret key and the debug mode.
+
+#### Secret key
 
 You can generate your secret key following these simple steps.
 
@@ -84,21 +79,23 @@ You can generate your secret key following these simple steps.
     `g4u2i$ftp27%p)%^c&j$0vwcc0o+jfx_ii_)*sn(na($(m71#s`
 3. Paste the random key into the `.env` file
 
+#### Debug mode
+
+Set this to `on`, when working in developing mode.
+
+Make sure you change the debug mode to `off`, when in production.
+
 ## Set up database
 
 The easiest choice is SQLite.
 SQLite is included in Python,
 so you won’t need to install anything else to support your database. 
 
-Run:
-
-`python manage.py migrate`
+Run: `python manage.py migrate`
 
 ## Launch django app
 
-Finally, you can launch your django app:
-
-`python ./manage.py runserver`
+Finally, you can launch your django app: `python ./manage.py runserver`
 
 Go to your browser:
 * http://127.0.0.1:8000/polls/
