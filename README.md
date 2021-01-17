@@ -19,6 +19,7 @@ Make sure pip is installed:
 `python -m pip --version`
 
 The output should look something like this:
+
 `pip 20.1.1 from /home/janclod/anaconda3/lib/python3.8/site-packages/pip (python 3.8)`
 
 If pip is not installed, you will get a message saying something like this:
@@ -33,9 +34,7 @@ If pip is not installed, you will get a message saying something like this:
 Download the .zip file of this repository [here](https://github.com/janclod/django-tutorial/archive/master.zip) and unzip.
 
 ### Option 2
-Run:
-
-`git clone https://github.com/janclod/django-tutorial.git`
+Run: `git clone https://github.com/janclod/django-tutorial.git`
 
 ## Set up virtual Python environment
 
@@ -44,7 +43,7 @@ Move into the project folder:
 On Linux:
 `cd ./django-tutorial`
 
-Create a virtual environment in the project folder (i.e., ./mysite)
+Create a virtual environment in the project folder (i.e., ./django-tutorial)
 
 `python -m venv ./venv`
 
@@ -79,7 +78,7 @@ This should end up with a success message, looking somethgin like this:
 
 ### Environment variables
 
-Rename the `.env.example` file to `.env`.
+Rename the `./mysite/.env.example` file to `./mysite/.env`.
 
 Add here your secret key.
 

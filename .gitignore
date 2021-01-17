@@ -1,5 +1,5 @@
 # Files to be excluded from Git
-.env
+mysite/.env
 db.sqlite3
 # Directory to be excluded from Git
 .idea
