@@ -2,5 +2,6 @@
 .env
 db.sqlite3
 # Directory to be excluded from Git
-.idea/
+.idea
 venv
+**/__pycache__
