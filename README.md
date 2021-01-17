@@ -53,24 +53,13 @@ On Linux:
 
 `source ./venv/bin/activate`
 
-## Install pip tools
-
-Install pip-tools:
-
-`pip install pip-tools`
-
-This should end up successfully.
-The last line of output will look something like this:
-
-`Successfully installed click-7.1.2 pip-20.3.3 pip-tools-5.5.0`
-
 ## Install requirements and local environment
 
 ### Requirements
 
 Install project requirements:
 
-`pip install -r requirements.txt`
+`python -m pip install -r requirements.txt`
 
 This should end up with a success message, looking somethgin like this:
 
@@ -94,6 +83,16 @@ You can generate your secret key following these simple steps.
     You will get something like this as output:
     `g4u2i$ftp27%p)%^c&j$0vwcc0o+jfx_ii_)*sn(na($(m71#s`
 3. Paste the random key into the `.env` file
+
+## Set up database
+
+The easiest choice is SQLite.
+SQLite is included in Python,
+so you won’t need to install anything else to support your database. 
+
+Run:
+
+`python manage.py migrate`
 
 ## Launch django app
 
