@@ -60,7 +60,9 @@ This should end up with a success message, looking somethgin like this:
 
 ### Environment variables
 
-Rename the `./mysite/.env.example` file to `./mysite/.env`.
+Rename the `./.env.example` file to `./.env`.
+
+On Linux: `mv .env.example .env`
 
 Add here your secret key and the debug mode.
 
